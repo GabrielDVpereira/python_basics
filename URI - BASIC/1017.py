@@ -1,15 +1,15 @@
-def calculateNotes()
-  return "terminar problema"
+from decimal import Decimal; 
+
+def calculateDistance(hours, speed): 
+  return hours*speed; 
+
+def calculateLiters(distance, performance):
+  return round(Decimal(distance/performance),3); 
 
 
-money = int(input())
+performance = 12; 
+hours = int(input()); 
+speed = int(input());
 
-notes = {
-  "100,00": 0,
-  "50,00": 0,
-  "20,00": 0,
-  "10,00": 0,
-  "5,00": 0,
-  "2,00": 0,
-  "1,00": 0
-}
+distance = calculateDistance(hours, speed); 
+print(calculateLiters(distance, performance));
